@@ -103,6 +103,44 @@
 
 .btn__span {
     color: white;
-    border: #8db9ee 1px solid;
+    /* border: #8db9ee 1px solid; */
     padding: 0.5em 1.5em 0.5em 0.2em;
+}
+
+/* For screens 768px wide or smaller */
+@media (max-width: 768px) {
+    .section__container--1 {
+        width: 90%;
+    }
+
+    .div__0,
+    .div__1,
+    .div__2,
+    .div__3 {
+        width: 45%;
+        margin-bottom: 2em;
+    }
+
+    .section__title-div {
+        padding-top: 2em;
+    }
+}
+
+/* For screens 480px wide or smaller */
+@media (max-width: 480px) {
+    .section__container--1 {
+        width: 100%;
+    }
+
+    .div__0,
+    .div__1,
+    .div__2,
+    .div__3 {
+        width: 100%;
+        margin-bottom: 2em;
+    }
+
+    .fig__btn {
+        font-size: 22px;
+    }
 }

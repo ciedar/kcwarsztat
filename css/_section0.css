@@ -55,6 +55,10 @@
     line-height: 1.25;
 }
 
+
+/* 
+==================================================
+ */
 @media screen and (max-width: 768px) {
     .section__container {
         grid-template-columns: 1fr;
