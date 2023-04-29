@@ -7,12 +7,14 @@
 
     align-items: center;
     background-color: white;
-    height: 1000px;
+    height: auto;
 }
 
 .border {
-    margin: 4em auto auto auto;
+    margin: 4em auto 4em auto;
     display: flex;
+    gap: 5em;
+    padding: 4em;
     max-width: 80%;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 
@@ -41,12 +43,16 @@
 
 .art__title {
     text-transform: uppercase;
-    font-size: 24px;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
 }
 
 .art__text {
     /* text-transform: uppercase; */
     font-size: 22px;
+    color: #515151;
+    line-height: 1.25;
 }
 
 @media screen and (max-width: 768px) {
