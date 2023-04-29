@@ -2,6 +2,7 @@
 @import "/css/_icons.css";
 @import "/css/_section0.css";
 @import "/css/_section1.css";
+@import "/css/_footer.css";
 
 
 
@@ -21,4 +22,8 @@
 
 li {
     list-style: none;
+}
+
+body {
+    height: 2400px;
 }
