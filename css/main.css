@@ -2,7 +2,7 @@
 @import "/css/_icons.css";
 @import "/css/_section0.css";
 @import "/css/_section1.css";
-@import "/css/_footer.css";
+@import "/css/_section2.css";
 
 
 
@@ -25,5 +25,5 @@ li {
 }
 
 body {
-    height: 2400px;
+    height: 2200px;
 }

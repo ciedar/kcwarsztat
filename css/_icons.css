@@ -9,3 +9,15 @@
     position: absolute;
     fill: #8db9ee;
 }
+
+
+
+.addres__icon,
+.telephone__icon,
+.email__icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 1000px;
+    fill: black;
+
+}
