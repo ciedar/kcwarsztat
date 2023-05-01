@@ -27,15 +27,18 @@
 
 
 
-.li__navbar-element a {
+
+.a__navbar-link {
     color: #f8fafc;
     /* font-size: 20px; */
     font-weight: 500;
     letter-spacing: 1.5px;
     text-transform: uppercase;
-    text-decoration: none;
+    text-decoration: none
+}
 
-
+.bluee {
+    color: #8db9ee;
 }
 
 .ul__navbar-div {
@@ -66,7 +69,6 @@
 .a__navbar-btn:hover {
     background-color: #8db9ee;
 }
-
 
 /*
  ===================================

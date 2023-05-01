@@ -1,0 +1,40 @@
+.my__work {
+    width: 80%;
+    margin: 4em auto;
+}
+
+.my__work-div {
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: row;
+    justify-content: center;
+    overflow-y: hidden;
+    overflow-x: visible;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.my__work-div img {
+    background-color: #0c0a09ef;
+    max-width: 45%;
+    height: auto;
+    margin: 10px;
+}
+
+.my__work-div img:hover {
+    /* max-width: 250%; */
+    background-color: black;
+}
+
+@media screen and (max-width: 768px) {
+    .my__work-div img {
+        /* max-width: 170%; */
+        background-color: #0c0a09ef;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .my__work-div img {
+        /* max-width: 170%; */
+        background-color: #0c0a09ef;
+    }
+}
