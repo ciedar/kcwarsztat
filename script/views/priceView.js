@@ -10,9 +10,7 @@ class priceView extends View {
     }
 
     generateHTML() {
-        console.log(this.data);
-        return `
-            
+        return ` 
             <section class="price__section">
                 ${this.data.map(({ name, price }) => `
                     <div class="container price__container">
@@ -22,8 +20,7 @@ class priceView extends View {
                         `).join('')}
                     </div>
                 `).join('')}
-            </section>
-        `;
+            </section>`;
     }
 };
 
@@ -31,16 +28,3 @@ export const app = new priceView();
 
 
 
-/*
-<section> 
-    <div>
-
-    
-    
-    
-    </div>
-</section>
-
-
-
-*/

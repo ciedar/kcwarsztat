@@ -10,7 +10,7 @@ class Work extends View {
         this.#container.insertAdjacentHTML("afterbegin", a);
     }
 
-    generateHTML(fun) {
+    generateHTML() {
         return `
                 <section class="my__work">
                 <div class="my__work-div">

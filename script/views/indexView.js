@@ -7,9 +7,7 @@ class Index extends View {
         this.#container.innerHTML = "";
         this.#container.insertAdjacentHTML("afterbegin", a);
     }
-    // clear() {
-    //     this.#container.innerHTML = ""
-    // }
+
 
     generteHTML() {
         return `<div class="body__div">

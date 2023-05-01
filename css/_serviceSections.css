@@ -1,0 +1,21 @@
+.text {
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+
+.tadek {
+    /* background-image: url(/img/figure_img/third.jpg); */
+    background-color: white;
+    width: 250px;
+    height: 200px;
+}
+
+.kran {
+    background-image: url(/img/figure_img/third.jpg);
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
