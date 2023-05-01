@@ -92,6 +92,93 @@ export const service = [
             "Łuszczyca, skłonność do powstawania bliznowców",
             "Liczne znamiona barwnikowe"
         ]
+    },
+    {
+        path: "./img\figure_img\mask.jpg",
+        name: "peeling kwasowy",
+        dlaList: [
+            "zmarszczki, utrata jędrności i elastyczności",
+            "skóra szara, przesuszona, pozbawiona blasku z pierwszymi oznakami fotostarzenia",
+            "trądzik",
+            "cera zanieczyszczona, trądzikowa, tłusta z bliznami potrądzikowymi",
+            "przebarwienia pigmentacyjne posłoneczne, pozapalne",
+            "nadmierne rogowacenie skóry"
+        ],
+        effekty: [
+            "odmłodzenie skóry, efektywny lifting",
+            "regeneracja i spłycenie zmarszczek",
+            "pobudzenie produkcji kolagenu i elastyny",
+            "spłycenie blizn potrądzikowych",
+            "Rozjaśnienie starych plam pigmentacyjnych",
+            "Złagodzenie stanów zapalnych, likwidacja krost i grudek",
+            "przeciwdziałanie trądzikowi"
+        ],
+        przeciwList: [
+            "Uczulenie na preparat złuszczający",
+            "Uszkodzony naskórek, stan po depilacji woskiem",
+            "Aktywna opryszczka, infekcje wirusowe, bakteryjne czy grzybicze w miejscu zabiegu",
+            "Doustna i miejscowa terapia retinoidami",
+            "Łuszczyca, skłonność do powstawania bliznowców",
+            "Liczne znamiona barwnikowe"
+        ]
+    },
+    {
+        path: "./img\figure_img\mask.jpg",
+        name: "peeling kwasowy",
+        dlaList: [
+            "zmarszczki, utrata jędrności i elastyczności",
+            "skóra szara, przesuszona, pozbawiona blasku z pierwszymi oznakami fotostarzenia",
+            "trądzik",
+            "cera zanieczyszczona, trądzikowa, tłusta z bliznami potrądzikowymi",
+            "przebarwienia pigmentacyjne posłoneczne, pozapalne",
+            "nadmierne rogowacenie skóry"
+        ],
+        effekty: [
+            "odmłodzenie skóry, efektywny lifting",
+            "regeneracja i spłycenie zmarszczek",
+            "pobudzenie produkcji kolagenu i elastyny",
+            "spłycenie blizn potrądzikowych",
+            "Rozjaśnienie starych plam pigmentacyjnych",
+            "Złagodzenie stanów zapalnych, likwidacja krost i grudek",
+            "przeciwdziałanie trądzikowi"
+        ],
+        przeciwList: [
+            "Uczulenie na preparat złuszczający",
+            "Uszkodzony naskórek, stan po depilacji woskiem",
+            "Aktywna opryszczka, infekcje wirusowe, bakteryjne czy grzybicze w miejscu zabiegu",
+            "Doustna i miejscowa terapia retinoidami",
+            "Łuszczyca, skłonność do powstawania bliznowców",
+            "Liczne znamiona barwnikowe"
+        ]
+    },
+    {
+        path: "./img\figure_img\mask.jpg",
+        name: "peeling kwasowy",
+        dlaList: [
+            "zmarszczki, utrata jędrności i elastyczności",
+            "skóra szara, przesuszona, pozbawiona blasku z pierwszymi oznakami fotostarzenia",
+            "trądzik",
+            "cera zanieczyszczona, trądzikowa, tłusta z bliznami potrądzikowymi",
+            "przebarwienia pigmentacyjne posłoneczne, pozapalne",
+            "nadmierne rogowacenie skóry"
+        ],
+        effekty: [
+            "odmłodzenie skóry, efektywny lifting",
+            "regeneracja i spłycenie zmarszczek",
+            "pobudzenie produkcji kolagenu i elastyny",
+            "spłycenie blizn potrądzikowych",
+            "Rozjaśnienie starych plam pigmentacyjnych",
+            "Złagodzenie stanów zapalnych, likwidacja krost i grudek",
+            "przeciwdziałanie trądzikowi"
+        ],
+        przeciwList: [
+            "Uczulenie na preparat złuszczający",
+            "Uszkodzony naskórek, stan po depilacji woskiem",
+            "Aktywna opryszczka, infekcje wirusowe, bakteryjne czy grzybicze w miejscu zabiegu",
+            "Doustna i miejscowa terapia retinoidami",
+            "Łuszczyca, skłonność do powstawania bliznowców",
+            "Liczne znamiona barwnikowe"
+        ]
     }
 
 
