@@ -1,64 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
+import View from "./mainView.js";
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;700&family=Nunito+Sans:ital,wght@0,200;0,300;0,600;1,200;1,300;1,600&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        integrity="sha512-WnBkHnwgxKr8XoWbhB58Z3qE3m/Dv+8QLidW5EAGU6Q5J+MvU8XJW1toe+lzHzN51AP48c7lLhB05yVYhnFaw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+class Index extends View {
+    #container = document.querySelector(".body__div");
+    init() {
+        const a = this.generteHTML();
+        this.#container.innerHTML = "";
+        this.#container.insertAdjacentHTML("afterbegin", a);
+    }
+    // clear() {
+    //     this.#container.innerHTML = ""
+    // }
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="/css/main.css">
-    <script src="https://kit.fontawesome.com/8adefe3035.js" crossorigin="anonymous"></script>
-
-    <title>Document</title>
-</head>
-
-<body>
-    <header class="header">
-        <div class="container__navbar">
-            <div class="navbar__div">
-                <div class="ul__navbar-div">
-                    <ul class="ul__navbar-list">
-                        <li class="li__navbar-element">
-                            <a href="index.html" class="logo__btn"><span><img src="/img/logo.png"
-                                        alt="home__logo"></span></a>
-                        </li>
-                        <li class="li__navbar-element">
-                            <a class="a__navbar-link" href="#one">o mnie</a>
-                        </li>
-                        <li class="li__navbar-element">
-                            <a class="a__navbar-link" href="#two">usługi</a>
-                        </li>
-                        <li class="li__navbar-element">
-                            <a class="a__navbar-link" href="#three">kontakt</a>
-                        </li>
-                        <li class="li__navbar-element">
-                            <a class="a__navbar-link bluee" href="#">prace</a>
-                        </li>
-                        <li class="li__navbar-element">
-                            <a class="a__navbar-link bluee" href="#">cennik</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="a__navbar-div-btn">
-                    <button class="a__navbar-btn">umów wizyte</button>
-                </div>
-            </div>
-        </div>
-    </header>
-    <div class="body__div">
+    generteHTML() {
+        return `<div class="body__div">
         <section class="section--0" id="one">
             <div class="section__container">
                 <div class="border">
@@ -170,16 +124,9 @@
                 </div>
             </div>
         </section>
-    </div>
-    <footer class="footer">
-        <div class="footer__container">
-            <a href="index.html" class="logo__footer"><span><img src="/img/logo.png" alt="home__logo"></span></a>
-            <p class="footer__addres"> Amundsena 7b, Gdańsk oś. Morena </p>
-            <p class="footer__telephone">+48 796500085</p>
-            <p class="footer__email">kciesla43@wp.pl</p>
-        </div>
-    </footer>
-</body>
-<script type="module" src="script/script.js"></script>
+    </div>`
+    }
+}
 
-</html>
+
+export const app = new Index();
