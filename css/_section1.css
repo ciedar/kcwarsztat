@@ -17,7 +17,11 @@
 .div__0,
 .div__1,
 .div__2,
-.div__3 {
+.div__3,
+.div__4,
+.div__5,
+.div__6,
+.div__7 {
     background-color: white;
     width: 250px;
     height: 200px;
@@ -26,7 +30,11 @@
 .fig__0,
 .fig__1,
 .fig__2,
-.fig__3 {
+.fig__3,
+.fig__4,
+.fig__5,
+.fig__6,
+.fig__7 {
     position: relative;
     background-size: cover;
     background-position: center;
@@ -47,7 +55,23 @@
 }
 
 .fig__3 {
+    background-image: url(/img/figure_img/mika-baumeister-8Qi6Yn6qDyA-unsplash.jpg);
+}
+
+.fig__4 {
     background-image: url(/img/figure_img/third.jpg);
+}
+
+.fig__5 {
+    background-image: url(/img/figure_img/teeth.jpg);
+}
+
+.fig__7 {
+    background-image: url(/img/figure_img/teeth.jpg);
+}
+
+.fig__6 {
+    background-image: url(/img/figure_img/mika-baumeister-8Qi6Yn6qDyA-unsplash.jpg);
 }
 
 .fig__btn {
@@ -99,6 +123,13 @@
 .section__1-tex-a {
     text-decoration: none;
     color: #8db9ee;
+}
+
+.section__1-tex-a:hover {
+    text-decoration: none;
+    color: #8db9ee;
+    font-size: 22px;
+    cursor: pointer;
 }
 
 .btn__span {

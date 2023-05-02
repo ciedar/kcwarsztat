@@ -1,53 +1,60 @@
 .text {
     width: 80%;
     margin: auto;
-    padding: 4em;
-    gap: 5em;
+    padding: 5em 0;
     display: flex;
-    height: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.text p {
-    font-size: 18px;
-    margin: 4px;
-    letter-spacing: -0.5px;
+.tescik {
+    row-gap: 5em;
 }
 
-.tadek {
-    /* background-image: url(/img/figure_img/third.jpg); */
-    background-color: white;
-    width: 250px;
-    height: 200px;
+.tescikk {
+    /* margin: 4em auto 4em auto; */
+    display: flex;
+    gap: 5em;
+    padding: 4em;
+    max-width: 100%;
+    /* box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px; */
+
+    /* -webkit-box-shadow: -2px 22px 23px 9px rgba(66, 68, 90, 1);
+    -moz-box-shadow: -2px 22px 23px 9px rgba(66, 68, 90, 1);
+    box-shadow: -2px 22px 23px 9px rgba(66, 68, 90, 1); */
+
+    -webkit-box-shadow: 0px 41px 45px -21px rgba(12, 10, 9, 0.94);
+    -moz-box-shadow: 0px 41px 45px -21px rgba(12, 10, 9, 0.94);
+    box-shadow: 0px 41px 45px -21px rgba(12, 10, 9, 0.94);
 }
 
-.kran {
+/* .kran {
     background-image: url(/img/figure_img/third.jpg);
     position: relative;
     background-size: cover;
     background-position: center;
     width: 100%;
     height: 100%;
-}
+} */
 
 .left__div {
-    border-bottom: solid 1px #0c0a09ef;
-    border-left: solid 1px #0c0a09ef;
     width: 50%;
     padding: 4em;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    -webkit-box-shadow: -100px 100px 14px -39px rgba(66, 68, 90, 1);
+    -moz-box-shadow: -100px 100px 14px -39px rgba(66, 68, 90, 1);
+    box-shadow: -100px 100px 14px -39px rgba(66, 68, 90, 1);
 }
 
 .right__div {
-    border-top: solid 1px #0c0a09ef;
-    border-right: solid 1px #0c0a09ef;
     width: 50%;
     padding: 4em;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    -webkit-box-shadow: 100px 100px 14px -39px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 100px 100px 14px -39px rgba(66, 68, 90, 1);
+    box-shadow: 100px 100px 14px -39px rgba(66, 68, 90, 1);
 }
 
 .div_head {
     font-size: 24px;
-    /* text-align: center; */
     text-transform: uppercase;
     color: #8db9ee;
     font-weight: 700;
