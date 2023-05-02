@@ -1,7 +1,11 @@
+import { service } from "../serviceData.js";
 import View from "./mainView.js";
 
 class Service extends View {
     #eventTarget = document.body
+    #obj;
+    #ele;
+
 
     init() {
         const markup = this.generateHTML()
@@ -9,12 +13,6 @@ class Service extends View {
         this.clear();
         this.containerElement.insertAdjacentHTML("afterbegin", markup)
     }
-    // initEvent() {
-    //     const markup = this.getA()
-    //     this.clear();
-    //     this.containerElement.insertAdjacentHTML("afterbegin", markup)
-    // }
-
 
     generateHTML() {
         return `<section class="text">
@@ -37,37 +35,40 @@ class Service extends View {
         })
     }
 
-    getA(render) {
+    getA() {
         this.#eventTarget.addEventListener("click", a => {
-            this.render(render)
             const c = a.target.closest(".jedyneczka");
             if (!c) return;
-            let ele = c.textContent;
-            console.log(this.data);
-            const obj = this.data.find((a) => {
-                console.log(a.name)
-                console.log(ele)
-                return a.name === ele;
-            });
-            console.log(obj)
+            const ele = c.textContent;
+            console.log(ele.length)
+            const newELe = ele.slice(0, -1)
+            // const din = this.data.map((a, i) => {
+            //     return a.name.length
+            // });
+            const find = this.data.find((a) => {
+                return a.name == newELe;
+            })
+
+            console.log(find)
             const html = `
-          <section class="text">
-            <div class="left__div">
-              ${obj.dlaList.map((a) => {
+              <section class="text">
+                <div class="left__div">
+                <p class="div_head">Dla kogo?</p>
+                  ${find.dlaList.map((a) => {
                 return `<p>${a}</p>`;
-            })}
-            </div>
-            <div class="right__div">
-              ${obj.przeciwList.map((a) => {
+            }).join("")}
+                </div>
+                <div class="right__div">
+                <p class="div_head" >Przeciwskazania</p>
+                  ${find.przeciwList.map((a) => {
                 return `<p>${a}</p>`;
-            })}
-            </div>
-          </section>`;
+            }).join("")}
+                </div>
+              </section>`;
             this.clear()
             this.containerElement.insertAdjacentHTML("afterbegin", html);
         })
     }
-
 
 }
 

@@ -133,15 +133,7 @@ class Index extends View {
                 </div>
             </div>
         </section>
-    </div>
-    <footer class="footer">
-        <div class="footer__container">
-            <a href="index.html" class="logo__footer"><span><img src="/img/logo.png" alt="home__logo"></span></a>
-            <p class="footer__addres"> Amundsena 7b, Gdańsk oś. Morena </p>
-            <p class="footer__telephone">+48 796500085</p>
-            <p class="footer__email">kciesla43@wp.pl</p>
-        </div>
-    </footer>`
+    </div>`
     }
 
     // event() {

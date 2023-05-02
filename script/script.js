@@ -29,7 +29,7 @@ function events() {
     // Index.app.event();
     Work.app.eventHandler();
     Service.app.eventHandler();
-    Service.app.getA(serviceData.service);
+    Service.app.getA();
 
 
 }

@@ -1,9 +1,16 @@
 .text {
     width: 80%;
     margin: auto;
+    padding: 4em;
     gap: 5em;
     display: flex;
     height: auto;
+}
+
+.text p {
+    font-size: 18px;
+    margin: 4px;
+    letter-spacing: -0.5px;
 }
 
 .tadek {
@@ -20,4 +27,29 @@
     background-position: center;
     width: 100%;
     height: 100%;
+}
+
+.left__div {
+    border-bottom: solid 1px #0c0a09ef;
+    border-left: solid 1px #0c0a09ef;
+    width: 50%;
+    padding: 4em;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.right__div {
+    border-top: solid 1px #0c0a09ef;
+    border-right: solid 1px #0c0a09ef;
+    width: 50%;
+    padding: 4em;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.div_head {
+    font-size: 24px;
+    /* text-align: center; */
+    text-transform: uppercase;
+    color: #8db9ee;
+    font-weight: 700;
+    margin-bottom: 1em;
 }
