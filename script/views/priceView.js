@@ -1,14 +1,13 @@
 import View from "./mainView.js";
 
-class priceView extends View {
-    #container = document.querySelector(".body__div");
-
+class Price extends View {
+    #navBar = document.querySelector(".navbar__div")
     init() {
-        const a = this.generateHTML();
-        this.#container.innerHTML = "";
-        this.#container.insertAdjacentHTML("afterbegin", a);
+        const markup = this.generateHTML()
+        this.clear();
+        this.containerElement.insertAdjacentHTML("afterbegin", markup)
+        // this.eventHandler();
     }
-
     generateHTML() {
         return ` 
             <section class="price__section">
@@ -22,9 +21,17 @@ class priceView extends View {
                 `).join('')}
             </section>`;
     }
+
+    eventHandler() {
+        this.#navBar.addEventListener("click", (a) => {
+            const element = a.target.closest(".cennik");
+            if (!element) return;
+            this.init();
+        })
+    }
 };
 
-export const app = new priceView();
+export const app = new Price();
 
 
 

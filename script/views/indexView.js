@@ -1,15 +1,26 @@
 import View from "./mainView.js";
 
 class Index extends View {
-    #container = document.querySelector(".body__div");
-    init() {
-        const a = this.generteHTML();
-        this.#container.innerHTML = "";
-        this.#container.insertAdjacentHTML("afterbegin", a);
+    #navBar = document.querySelector(".navbar__div")
+    #eventTarget = document.body
+
+    init(type) {
+        const markup = this.html()
+        this.clear();
+        this.containerElement.insertAdjacentHTML("afterbegin", markup)
+        // this.type;
     }
 
+    eventHandler() {
+        this.#navBar.addEventListener("click", (a) => {
+            const element = a.target.closest(".a__navbar-link");
+            if (!element) return;
+            if (element.classList.contains("bluee")) return;
+            this.init();
+        })
+    }
 
-    generteHTML() {
+    html() {
         return `<div class="body__div">
         <section class="section--0" id="one">
             <div class="section__container">
@@ -49,7 +60,7 @@ class Index extends View {
                 <p class="section__title">Usługi</p>
                 <div class="section__title-btn">
                     <p class="section__1-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, magnam.
-                        <span class="btn__span"><a class="section__1-tex-a" href="#">Lorem, ipsum.</a>
+                        <span class="btn__span"><a class="section__1-tex-a">Lorem, ipsum.</a>
                             <svg class="section__1-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                 fill="#000000" viewBox="0 0 256 256">
                                 <path
@@ -122,9 +133,25 @@ class Index extends View {
                 </div>
             </div>
         </section>
-    </div>`
+    </div>
+    <footer class="footer">
+        <div class="footer__container">
+            <a href="index.html" class="logo__footer"><span><img src="/img/logo.png" alt="home__logo"></span></a>
+            <p class="footer__addres"> Amundsena 7b, Gdańsk oś. Morena </p>
+            <p class="footer__telephone">+48 796500085</p>
+            <p class="footer__email">kciesla43@wp.pl</p>
+        </div>
+    </footer>`
     }
-}
 
+    // event() {
+    //     this.#eventTarget.addEventListener("click", a => {
+    //         const ele = a.target.closest(".section__1-tex-a")
+    //         if (!ele) return;
+    //         console.log(ele)
+    //         this.init()
+    //     })
+    // }
+}
 
 export const app = new Index();

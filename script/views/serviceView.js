@@ -1,116 +1,74 @@
-// import View from "./mainView.js";
-
-// class Service extends View {
-//     #container = document.querySelector(".body__div");
-//     // #obj;
-
-//     init() {
-//         const a = this.generateHTML();
-//         this.#container.innerHTML = "";
-//         this.#container.insertAdjacentHTML("afterbegin", a);
-//         // this.getA();
-//     }
-
-
-
-//     generateHTML() {
-//         return `<section class="text">
-//         ${this.data.map((a) => {
-//             return `
-//             <div class="tadek">
-//                 <figure class="kran">
-//                 <a class="jedyneczka" href="#">${a.name} </a>
-//                 </figure>
-//             </div>`})}
-//          </section>`
-//     }
-
-//     getA(a) {
-//         // document.querySelector(".body__div").addEventListener("click", (a) => {
-//         const c = a.target.closest("a");
-//         if (!c) return;
-//         let ele = c.textContent;
-//         console.log(this.data)
-//         console.log(ele)
-//         const obj = this.data.find((a) => {
-//             return a.name === ele;
-//         })
-//         console.log(obj)
-//         const html = `
-//             <section class="text">
-//             <div class="left__div">
-//                     ${obj.dlaList.map((a) => {
-//             return `<p>${a}</p>`
-//         })}
-//             </div>
-//             <div class="right__div">
-//                 ${obj.przeciwList.map((a) => {
-//             return `<p>${a}</p>`
-//         })}
-//             </div>
-//             </section>`
-//         this.#container.innerHTML = "";
-//         this.#container.insertAdjacentHTML("afterbegin", html);
-//         // handler()
-//         // }
-//         // )
-//     }
-// }
-
-// export const app = new Service;
-
 import View from "./mainView.js";
 
 class Service extends View {
-    #container = document.querySelector(".body__div");
+    #eventTarget = document.body
 
     init() {
-        const a = this.generateHTML();
-        this.#container.innerHTML = "";
-        this.#container.insertAdjacentHTML("afterbegin", a);
-
-        this.#container.addEventListener("click", (event) => {
-            this.getA(event);
-        });
+        const markup = this.generateHTML()
+        // console.log(data, markup)
+        this.clear();
+        this.containerElement.insertAdjacentHTML("afterbegin", markup)
     }
+    // initEvent() {
+    //     const markup = this.getA()
+    //     this.clear();
+    //     this.containerElement.insertAdjacentHTML("afterbegin", markup)
+    // }
+
 
     generateHTML() {
         return `<section class="text">
-      ${this.data.map((a) => {
+        ${this.data.map((a) => {
             return `
-          <div class="tadek">
-            <figure class="kran">
-              <a class="jedyneczka" href="#">${a.name}</a>
-            </figure>
-          </div>
-        `;
-        })}
-    </section>`;
+            <div class="tadek">
+                <figure class="kran">
+                <a class="jedyneczka" href="#">${a.name} </a>
+                </figure>
+            </div>`})}
+         </section>`
     }
 
-    getA(event) {
-        const c = event.target.closest("a");
-        if (!c) return;
-        let ele = c.textContent;
-        const obj = this.data.find((a) => {
-            return a.name === ele;
-        });
-        const html = `
-      <section class="text">
-        <div class="left__div">
-          ${obj.dlaList.map((a) => {
-            return `<p>${a}</p>`;
-        })}
-        </div>
-        <div class="right__div">
-          ${obj.przeciwList.map((a) => {
-            return `<p>${a}</p>`;
-        })}
-        </div>
-      </section>`;
-        this.#container.innerHTML = "";
-        this.#container.insertAdjacentHTML("afterbegin", html);
+
+    eventHandler() {
+        this.#eventTarget.addEventListener("click", a => {
+            const ele = a.target.closest(".section__1-tex-a");
+            if (!ele) return;
+            this.init()
+        })
     }
+
+    getA(render) {
+        this.#eventTarget.addEventListener("click", a => {
+            this.render(render)
+            const c = a.target.closest(".jedyneczka");
+            if (!c) return;
+            let ele = c.textContent;
+            console.log(this.data);
+            const obj = this.data.find((a) => {
+                console.log(a.name)
+                console.log(ele)
+                return a.name === ele;
+            });
+            console.log(obj)
+            const html = `
+          <section class="text">
+            <div class="left__div">
+              ${obj.dlaList.map((a) => {
+                return `<p>${a}</p>`;
+            })}
+            </div>
+            <div class="right__div">
+              ${obj.przeciwList.map((a) => {
+                return `<p>${a}</p>`;
+            })}
+            </div>
+          </section>`;
+            this.clear()
+            this.containerElement.insertAdjacentHTML("afterbegin", html);
+        })
+    }
+
+
 }
 
 export const app = new Service();

@@ -2,14 +2,14 @@ import View from "./mainView.js";
 
 
 class Work extends View {
-    #container = document.querySelector(".body__div");
+    #navBar = document.querySelector(".navbar__div")
 
     init() {
-        const a = this.generateHTML();
-        this.#container.innerHTML = "";
-        this.#container.insertAdjacentHTML("afterbegin", a);
+        const markup = this.generateHTML()
+        this.clear();
+        this.containerElement.insertAdjacentHTML("afterbegin", markup)
+        this.eventHandler();
     }
-
     generateHTML() {
         return `
                 <section class="my__work">
@@ -22,7 +22,14 @@ class Work extends View {
                `
     }
 
-
+    eventHandler() {
+        this.#navBar.addEventListener("click", (a) => {
+            const element = a.target.closest(".prace");
+            if (!element) return;
+            this.init();
+            // this.
+        })
+    }
 }
 
 
