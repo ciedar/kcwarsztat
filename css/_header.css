@@ -5,7 +5,6 @@
 .container__navbar {
     max-width: 80%;
     margin: 0 auto;
-    /* padding: 0 20px; */
 }
 
 
@@ -37,9 +36,9 @@
     text-decoration: none
 }
 
-.bluee {
+/* .bluee {
     color: #8db9ee;
-}
+} */
 
 .ul__navbar-div {
     align-items: center;

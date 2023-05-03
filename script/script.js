@@ -26,7 +26,6 @@ function renderData() {
 function events() {
     Price.app.eventHandler();
     Index.app.eventHandler();
-    // Index.app.event();
     Work.app.eventHandler();
     Service.app.eventHandler();
     Service.app.getA();

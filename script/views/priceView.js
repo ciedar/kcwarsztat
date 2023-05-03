@@ -6,7 +6,6 @@ class Price extends View {
         const markup = this.generateHTML()
         this.clear();
         this.containerElement.insertAdjacentHTML("afterbegin", markup)
-        // this.eventHandler();
     }
     generateHTML() {
         return ` 

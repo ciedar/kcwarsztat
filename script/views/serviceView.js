@@ -9,7 +9,6 @@ class Service extends View {
 
     init() {
         const markup = this.generateHTML()
-        // console.log(data, markup)
         this.clear();
         this.containerElement.insertAdjacentHTML("afterbegin", markup)
     }
@@ -24,34 +23,10 @@ class Service extends View {
                 <figure class="fig__${i}">
                             <button class="fig__btn lol">${a.name}</button>
                             </figure>
-                            </div>
-                            
-                            
-                            `
+                            </div>`
         }).join("")}
         </div>
                 </section>`
-
-
-
-
-
-
-
-
-
-
-
-
-        // return `<section class="text">
-        // ${this.data.map((a) => {
-        //     return `
-        //     <div class="tadek">
-        //         <figure class="kran">
-        //         <a class="jedyneczka" href="#">${a.name} </a>
-        //         </figure>
-        //     </div>`})}
-        //  </section>`
     }
 
 
@@ -68,17 +43,11 @@ class Service extends View {
             const c = a.target.closest(".lol");
             if (!c) return;
             const ele = c.textContent;
-            console.log(ele.length)
             const newELe = ele
-            const din = this.data.map((a, i) => {
-                return a.name
-            });
-            console.log(din)
             const find = this.data.find((a) => {
                 return a.name == newELe;
             })
 
-            console.log(find)
             const html = `
               <section class="text">
                 <div class="left__div">
@@ -102,3 +71,5 @@ class Service extends View {
 }
 
 export const app = new Service();
+
+

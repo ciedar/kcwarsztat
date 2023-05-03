@@ -8,7 +8,6 @@ class Index extends View {
         const markup = this.html()
         this.clear();
         this.containerElement.insertAdjacentHTML("afterbegin", markup)
-        // this.type;
     }
 
     eventHandler() {
@@ -135,15 +134,6 @@ class Index extends View {
         </section>
     </div>`
     }
-
-    // event() {
-    //     this.#eventTarget.addEventListener("click", a => {
-    //         const ele = a.target.closest(".section__1-tex-a")
-    //         if (!ele) return;
-    //         console.log(ele)
-    //         this.init()
-    //     })
-    // }
 }
 
 export const app = new Index();

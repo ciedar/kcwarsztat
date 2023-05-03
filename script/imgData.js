@@ -15,26 +15,3 @@ export const img = [
 ];
 
 
-
-export function loadImage() {
-    const imgElements = img.map((el) => {
-        const img = document.createElement("img");
-        img.classList.add("work");
-        img.src = el.path;
-        console.log(img)
-        return img;
-    })
-
-    // imgElements.forEach(async (a) => {
-    //     const img = a;
-    //     await new Promise((resolve) => {
-    //         img.addEventListener("load", () => {
-    //             console.log(img)
-    //             // document.body.append(img);
-    //             return img;
-    //         })
-    //     })
-    // })
-}
-
-

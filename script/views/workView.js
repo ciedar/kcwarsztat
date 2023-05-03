@@ -27,7 +27,6 @@ class Work extends View {
             const element = a.target.closest(".prace");
             if (!element) return;
             this.init();
-            // this.
         })
     }
 }
